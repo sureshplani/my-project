@@ -1,4 +1,4 @@
-export default [
+ const fit =[
   {
     id: 1,
     title: "CHEST WORKOUT",
@@ -186,3 +186,4 @@ export default [
     ],
   },
 ];
+export default fit
