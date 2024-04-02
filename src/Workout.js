@@ -107,7 +107,7 @@ function Workout() {
     if (userid && userid > 0) {
       setIndex(Number(userid));
     }
-  }, []);
+  }, [userid]);
 
   const handleNext = () => {
     const isLastSlide = index === excersise.length - 1;
