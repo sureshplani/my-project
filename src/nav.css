@@ -1,0 +1,99 @@
+.nav{
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 10vh;
+    border-top-left-radius:5px ;
+    border-top-right-radius:5px ;
+}
+.nav-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1px auto;
+  height: 100%;
+}
+.logo{
+  color:  hsl(28, 88%, 62%);
+  transition: color 0.4s;
+  font-size: 1.25rem;
+  margin-left: 1rem;
+  font-family: "Dancing Script", cursive;
+}
+.menu-icon{
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: hsl(0, 0%, 95%);
+}
+.menu-list {
+         display: flex;
+         flex-direction: column;
+         row-gap: 1rem;
+       
+}
+
+.menu-list .menu-link{
+  color: white;
+  font-weight: 600;
+  transition: color 0.4s;
+  font-size: 2rem;
+}
+.menu-list .menu-link:hover{
+  padding: 0.4rem;
+  background-color: aliceblue;
+  border-bottom: 3px solid red;
+  color: black;
+}
+.menu-close{
+  font-size: 2.5rem;
+  color: yellow;
+  cursor: pointer;
+  position: absolute;
+  top: 2rem;
+  right: 1.5rem;
+ }
+ @media screen and (max-width: 1150px) {
+  .menu{
+    width: 80%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background-color: rgba(0, 0, 0, 0.696);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    padding: 6rem 3rem;
+    transition: right 1.3s;
+  }
+  .menu-icon{
+    position: absolute;
+    right: 2rem;
+  }
+  .show-menu {
+    right: 0;
+    }
+
+ }
+ @media screen and (min-width: 1150px) {
+  .nav{
+   height: calc(3.5rem + 1rem);
+  }
+   .menu-icon, .menu-close{
+     display: none;
+   }
+    .menu-list{
+     flex-direction: row;
+     column-gap: 2rem;
+   }
+   .menu-list .menu-link{
+    font-size: 1rem;
+  }
+  .menu{
+    position: absolute;
+    right: 2rem;
+  }
+ 
+  }

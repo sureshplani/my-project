@@ -1,0 +1,154 @@
+.home {
+  margin-top: 4.6rem;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  overflow: auto;
+}
+
+
+.home-bg {
+  background-image: url("https://media.istockphoto.com/id/1452468524/photo/michigan-avenue-in-early-morning-light.jpg?s=612x612&w=0&k=20&c=R_DJKtJmsj3ioLIiobsCcldW8eJBxXsydwb0-uj96uw=");
+  background-size: cover;
+  background-position: bottom;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 2.5rem;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+.home-bg-text {
+  background-color: red;
+  background-image: url("https://wallpapercave.com/wp/wp10348167.jpg");
+  background-clip: text;
+  -webkit-background-clip: text;
+  filter: drop-shadow(1rem 0.5rem 1rem rgba(0, 0, 255, 0.443));
+  position: relative;
+  top: 8rem;
+  color: transparent;
+  animation: text 1s linear 0s 1 forwards ;
+}
+.home-bg button{
+  background-color: rgba(255, 0, 0, 0.79);
+  border: 1px solid red;
+  cursor: pointer;
+  color: white;
+  padding: 0.5rem;
+  position: relative;
+  top: 12rem;
+  font-size: 1.2rem;
+  width: 10rem;
+  border-radius: 10px;
+  animation: explore 1s linear 0s 1 forwards ;
+}
+.forward{
+  position: relative;
+  top: 0.2em;
+  left: 0.6em;
+}
+
+@media (max-width: 576px) {
+  .home{
+    min-width: 500px;
+    margin-bottom: 0;
+   
+  }
+  .home-bg {
+    min-width: 500px;
+    height: 105vh;
+  }
+}
+.home-container {
+  display: flex;
+  margin-top: 2rem;
+  flex-direction: column;
+  row-gap: 1rem;
+  width: 100%;
+}
+
+.home-profile {
+  display: flex;
+  column-gap: 20rem;
+  align-items: center;
+  background-color: rgba(127, 255, 212, 0.34);
+  height: 80vh;
+}
+.home-profile h1 {
+  width: 100%;
+  position: absolute;
+  top: 40rem;
+  background-color: aqua;
+}
+.home-profile p {
+  width: 50%;
+  align-self: center;
+  justify-content: center;
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: white;
+  border: 1px solid black;
+  background-color: rgba(0, 0, 0, 0.29);
+  border-radius: 1rem;
+  box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.267);
+}
+.home-profile-img {
+  width: 20%;
+  height: 40vh;
+  border-radius: 8em;
+  margin-left: 1rem;
+}
+.home-content {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(0, 255, 255, 0.292);
+  width: 100%;
+  height: 80vh;
+  align-items: center;
+}
+.home-content h1 {
+  position: absolute;
+  top: 73rem;
+  font-size: 2rem;
+  width: 100%;
+}
+.home-content ul {
+  width: 30%;
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: black;
+  border: 1px solid black;
+  background-color: rgba(68, 18, 207, 0.329);
+  border-radius: 1rem;
+  box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.267);
+  align-self: center;
+}
+
+.home-content-img {
+  width: 50%;
+  height: 50vh;
+  border-radius: 2rem;
+}
+.home-box {
+  width: 30%;
+  height: 20rem;
+  border: 1px solid black;
+  margin-top: 5rem;
+}
+
+@keyframes text {
+  from {
+    transform: translateY(-150px);
+  }
+  to{
+    transform: translateY(0);
+  }
+  
+}
+@keyframes explore {
+  from {
+    transform: translatex(-200px);
+  }
+  to{
+    transform: translatex(0);
+  }
+  
+}

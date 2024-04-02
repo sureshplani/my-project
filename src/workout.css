@@ -1,0 +1,380 @@
+/* workoutlist style */
+
+.workoutlist-container {
+  width: 100%;
+  margin-top: 0.4rem;
+
+}
+.bg-list {
+  width: 100%;
+  height: 5%;
+}
+.homeback {
+  font-size: 3rem;
+  position: relative;
+  top: 5rem;
+  left: 1rem;
+  color: white;
+  cursor: pointer;
+}
+.workoutlist {
+  width: 100%;
+  margin-top: 2rem;
+  height: 100vh;
+  position: relative;
+}
+.boxlist {
+  width: 90%;
+  border: 2px solid black;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  display: flex;
+  height: 10vh;
+  margin-left: 4rem;
+  position: relative;
+  font-size: 2rem;
+  background-color: rgba(0, 0, 0, 0.313);
+}
+.boxlist a {
+  color: rgba(0, 0, 0, 0.607);
+}
+.startbtn {
+  background-color: hsla(240, 100%, 50%, 0.781);
+  color: white;
+  width: 40rem;
+  height: 6rem;
+  padding: 1rem;
+  border-radius: 5rem;
+  margin-top: 3rem;
+  border: none;
+  position: absolute;
+  font-size: 3rem;
+  left: 18rem;
+  cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  .workoutlist-container {
+    margin-top: 1.5rem;
+  }
+  .workoutlist {
+    width: 100%;
+    margin-top: 5rem;
+    height: 100vh;
+    position: relative;
+    left: 0;
+    min-width: 500px;
+  }
+
+  .boxlist {
+    min-width: 400px;
+    border: 2px solid black;
+    margin-top: 2rem;
+    display: flex;
+    height: 10vh;
+    margin-left: 1rem;
+  }
+  .bg-list {
+    min-width: 500px;
+  }
+  .startbtn {
+    width: 25rem;
+
+    left: 2.5rem;
+  }
+}
+
+/* workouthome style */
+
+.workoutcontainer {
+  margin-top: 4rem;
+  width: 100%;
+  margin-bottom: 4rem;
+}
+
+.workoutdone {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(255, 228, 196, 0.199);
+  width: 100%;
+  height: 150px;
+}
+.workoutview {
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+}
+.workouttemplet {
+  width: 90%;
+  margin-top: 3rem;
+  background-size: cover;
+  position: relative;
+  left: 4rem;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px white;
+  background-color: transparent;
+  height: 60vh;
+}
+.workouttemplet:hover {
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.55);
+  padding: 0;
+}
+.bg {
+  width: 100%;
+  border-radius: 10px;
+  height: 100%;
+}
+.workouttemplet .temp-h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 2rem;
+  width: 100%;
+  border-radius: 10px;
+  padding: 2rem;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.194);
+  color: rgba(255, 255, 255, 0.486);
+}
+
+.workouttemplet h1 {
+  position: absolute;
+  top: 6rem;
+}
+
+@media (max-width: 576px) {
+  .workoutcontainer {
+    margin-top: 5rem;
+    width: 100%;
+    min-width: 500px;
+  }
+  .workouttemplet {
+    width: 90%;
+    margin-top: 2rem;
+    left: 1rem;
+    border-radius: 20px;
+    height: 25vh;
+  }
+  .workouttemplet .temp-h1 {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.194);
+    padding: 1rem;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.596);
+  }
+  .workouttemplet h1 {
+    top: 3rem;
+  }
+}
+
+/* workout */
+
+.workout {
+  width: 100%;
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+}
+
+.gifcontainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  width: 100%;
+  row-gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+}
+.gifcontainer h2 {
+  font-size: 2.2rem;
+}
+.workoutgif {
+  width: 50%;
+  height: 20rem;
+}
+/* .time{
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+    position: relative;
+    width: 100%;
+} */
+/* .timebox{
+    width: 120px;
+    font-size: 3rem;
+    height: 120px;
+    border: 2px solid black;
+    border-radius: 120px;
+    justify-content: center;
+    text-align: center;
+ 
+} */
+.gonext {
+  display: flex;
+  width: 100%;
+  position: absolute;
+  top: 40rem;
+}
+.backicon {
+  font-size: 3rem;
+  margin: 1rem 1rem 0;
+  cursor: pointer;
+}
+.playbtn {
+  border: 0;
+  background-color: transparent;
+  position: relative;
+  top: -3.8rem;
+  left: 5rem;
+}
+.playicon {
+  font-size: 2.5rem;
+}
+.donebtn-container {
+  position: absolute;
+  top: 37rem;
+  left: 35rem;
+  padding: 1rem;
+}
+.donebtn {
+  background-color: rgba(0, 0, 255, 0.616);
+  cursor: pointer;
+  width: 8rem;
+  height: 3rem;
+  padding: 1rem;
+  font-size: 18px;
+  font-weight: bold;
+  border: 0;
+  border-radius: 2rem;
+}
+
+@media (max-width: 576px) {
+  .workout {
+    margin-top: 6rem;
+    width: 100%;
+    margin-bottom: 15rem;
+    min-width: 500px;
+  }
+  .gifcontainer {
+    max-width: 500px;
+    left: 0;
+  }
+ 
+  .workoutgif {
+    width: 90%;
+    height: 30rem;
+  }
+  .gonext {
+    min-width: 500px;
+    top: 60rem;
+  }
+  .donebtn-container{
+    top:52rem;
+    left: 10rem;
+  }
+  .donebtn{
+   font-size: 2rem;
+   width: 10rem;
+   height: 4rem;
+  }
+  .btn3 {
+    width: 10rem;
+    height: 4rem;
+    padding: 1rem;
+    font-size: 2rem;
+    background-color: rgba(255, 166, 0, 0.591);
+    border: 0;
+    border-radius: 2rem;
+    position: absolute;
+    left: 0;
+  }
+  .btn4 {
+    width: 10rem;
+    height: 4rem;
+    padding: 1rem;
+    font-size: 2rem;
+    background-color: rgba(255, 255, 0, 0.621);
+    border: 0;
+    border-radius: 2rem;
+    position: absolute;
+    right: 0;
+  }
+}
+@media screen and (min-width: 1150px) {
+  .gifcontainer {
+    margin-top: 0;
+  }
+
+  .time {
+    top: 4rem;
+    left: 25rem;
+    row-gap: 2rem;
+    flex-direction: column;
+    position: absolute;
+    top: 14rem;
+    left: 65rem;
+  }
+  .time .btn1 {
+    background-color: rgba(0, 128, 0, 0.671);
+    border: 0;
+    color: white;
+    border-radius: 1rem;
+    font-weight: 600;
+    width: 6rem;
+    height: 3rem;
+    cursor: pointer;
+  }
+
+  .timebox {
+    width: 80px;
+    font-size: 2rem;
+    height: 80px;
+    border: 2px solid black;
+    border-radius: 120px;
+    font-weight: 600;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  .timebox p {
+    margin-top: 0.3rem;
+  }
+  .time .btn2 {
+    background-color: rgba(255, 0, 0, 0.671);
+    border: 0;
+    color: white;
+    border-radius: 1rem;
+    font-weight: 600;
+    width: 6rem;
+    height: 3rem;
+    cursor: pointer;
+  }
+
+  .gonext {
+    justify-content: space-around;
+  }
+  .btn3 {
+    width: 6rem;
+    height: 3rem;
+    padding: 1rem;
+    font-weight: 600;
+    background-color: rgba(255, 166, 0, 0.591);
+    border: 0;
+    border-radius: 2rem;
+    cursor: pointer;
+  }
+  .btn4 {
+    width: 6rem;
+    height: 3rem;
+    padding: 1rem;
+    font-weight: 600;
+    background-color: rgba(255, 255, 0, 0.621);
+    border: 0;
+    border-radius: 2rem;
+    cursor: pointer;
+  }
+}

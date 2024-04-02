@@ -1,0 +1,172 @@
+.App {
+    text-align: center;
+  
+  }
+  
+  
+  .Box {
+    
+    pointer-events: painted;
+  }
+  .Box{
+    width: 4%;
+    height: 4%;
+    background-color: beige;
+    padding: 100px;
+    border-radius: 500px;
+    display: flex;
+    color: black;
+    align-items: center;
+    justify-content: center; 
+   
+  }
+  .Box1{
+    width: 4%;
+    height: 4%;
+    background-color: beige;
+    padding: 100px;
+    border-radius: 500px;
+    display: flex;
+    color: black;
+    align-items: center;
+    justify-content: center; 
+  
+  
+  /*   transform: rotate(360deg) ; */
+  animation: move 10s ease-in-out 1s infinite forwards;
+  
+   
+  }
+  .Box1:hover{
+  /*   transition: all 10s linear 0.5s; */
+  animation:Box1 infinite 10s linear;
+     
+  }
+  
+  .Box:hover{
+    box-shadow: green yellow olive blue;
+    filter: brightness(100%);
+    border: 2px solid red;
+    background-color: blue;
+    animation:Box infinite 10s linear;
+     
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .Box {
+  
+      animation: movex 30s ease-in-out 1s infinite forwards;
+      
+    }
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-flow: row nowrap;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    gap: 2rem;
+    justify-content: space-evenly;
+  
+  }
+  @keyframes nav{
+    from {
+      transform:translateX(-200px);
+    }
+    to {
+      transform:translateX(0);
+    }
+  }
+  @keyframes move{
+    0%{
+      transform: translateY(0);
+    }
+    33%{
+      transform: translateY(200px);
+    }
+    66%{
+      transform: translateY(-200px);
+    }
+    100%{
+      transform: translateY(0);
+      background-color: blue;
+    }
+  
+  }
+  @keyframes movex{
+    0%{
+      transform: translateX(0);
+    }
+    33%{
+      transform: translateX(520px);
+    }
+    66%{
+      transform: translateX(-200px);
+    }
+    100%{
+      transform: translateX(0);
+      background-color: blue;
+    }
+  
+  }
+  
+  
+  @keyframes Box {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes Box1 {
+    from {
+      transform: rotate(360deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+  /* Nav */
+  
+.header{
+    background-color: black;
+}
+.Nav{
+    width: 100%;
+    background-color: black;
+    display: none;
+    animation: show 1s ease-in-out forwards;
+    transform-origin: top center;
+    gap: 1rem;
+  }
+
+.Nav li a{
+    color: white;
+    text-decoration: none; 
+    border: 1px solid gray;
+    gap:20px;
+   
+    display: block;
+  }
+  :is(header:hover, header:focus-within)
+  Nav{
+    display: block;
+  
+}
+@keyframes show{
+    0%{
+      transform: scaleY(0);
+    }
+    80%{
+      transform: scaleY(1.2);
+    }
+    0%{
+      transform: scaleY(1);
+    }
+  }

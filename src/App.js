@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Nav from "./Nav";
+import Footer from "./Footer";
+import { Route, Routes } from "react-router-dom";
+import ColourChange from "./ColourChange";
+import Workout from "./Workout";
+import Home from "./Home";
+import WorkoutHome from "./WorkoutHome";
+import WorkoutList from "./WorkoutList";
+import { FitnessContext } from "./Context";
+import Rest from "./Rest";
+import ProjectHome from "./ProjectHome";
+import Download from "./Download";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Nav />
+      <FitnessContext>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<ProjectHome/>} />
+          <Route path="/download" element={<Download />} />
+          <Route path="/color" element={<ColourChange />} />
+          <Route path="/workoutpage/:id" element={<Workout />} />
+          <Route path="/workoutHome" element={<WorkoutHome />} />
+          <Route path="/workout/:id" element={<WorkoutList />} />
+          <Route path="/rest/:id/:indexid" element={<Rest />} />
+        </Routes>
+      </FitnessContext>
+      <Footer />
     </div>
   );
 }
